@@ -20,7 +20,7 @@ var (
 	limit                       = 6
 	dataBytes, _ = hex.DecodeString(IntermediateFactoryBytecode)
   hashByteCode = crypto.Keccak256(dataBytes)
-	toFind = "0x0000000"
+	toFind = "0x00000000"
 )
 
 func bigIntToByteArray(n *big.Int) [32]byte {
